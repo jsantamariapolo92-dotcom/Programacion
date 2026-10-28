@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class ChiclesDeRegalo {
 
+    
+    
     public static void main(String[] args) {
         totalChicles();
     }
 
-    public static int totalChicles(int chiclesInicio, int envoltorios, int chiclesRegalo) {
+    public static int totalChicles() {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe el número de chicles comprados inicialmente: ");
@@ -23,7 +25,7 @@ public class ChiclesDeRegalo {
 
             if (envoltorios % 5 == 0) {
                 System.out.println("El número de envoltorios que tienes " + envoltorios);
-                int chicles31 = envoltorios / 5;
+                int chiclesRegalo = envoltorios / 5;
 
                 if (envoltorios < 0) {
                     return (-1);
@@ -36,6 +38,7 @@ public class ChiclesDeRegalo {
             }
 
         }
+        return chiclesInicio;
         
 
     }
